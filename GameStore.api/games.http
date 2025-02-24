@@ -1,0 +1,32 @@
+GET http://localhost:5124/games
+
+###
+
+GET http://localhost:5124/games/2
+
+###
+
+POST http://localhost:5124/games
+Content-Type: application/json
+
+{
+  "name": "Street Fighter II",
+  "genreId": 1,
+  "price": "19.99",
+  "releaseDate": "2022-12-12"
+}
+
+###
+PUT http://localhost:5124/games/2
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II turbo",
+    "genreId": 1,
+    "price": 19.99,
+    "releaseDate": "1997-07-15"
+}
+
+###
+
+DELETE http://localhost:5124/games/2
